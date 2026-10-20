@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #08130f;
+    color: #f4f7f5;
+    line-height: 1.7;
+}
+
+/* Website Header */
+header {
+    background: linear-gradient(135deg, #071b13, #123c2b);
+    color: white;
+    text-align: center;
+    padding: 32px 15px;
+    border-bottom: 2px solid #20b875;
+}
+
+header h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+header p {
+    color: #b8d8c7;
+    margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+    background: rgba(5, 17, 12, 0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #234a38;
+}
+
+nav a {
+    color: #e7f3ec;
+    text-decoration: none;
+    padding: 9px 13px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background: #168653;
+    color: white;
+}
+
+/* Home Page Hero */
+.hero {
+    min-height: 480px;
+    padding: 90px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(3, 16, 10, 0.65),
+                        rgba(3, 16, 10, 0.90)),
+        url("https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: clamp(32px, 6vw, 58px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 850px;
+}
+
+.hero p {
+    color: #d8e7de;
+    font-size: 18px;
+    max-width: 650px;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+.btn,
+button {
+    display: inline-block;
+    background: #19a765;
+    color: white;
+    padding: 13px 24px;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn:hover,
+button:hover {
+    background: #117748;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.content {
+    max-width: 1100px;
+    width: calc(100% - 32px);
+    margin: 35px auto;
+    padding: 30px;
+    background: #102119;
+    border: 1px solid #244634;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+    font-size: clamp(27px, 4vw, 36px);
+    color: #5de3a0;
+    margin-bottom: 16px;
+}
+
+.content h3 {
+    color: #e4f8eb;
+    margin: 20px 0 8px;
+}
+
+.content p {
+    color: #c5d7cc;
+    margin-bottom: 15px;
+}
+
+.content hr {
+    border: none;
+    border-top: 1px solid #315440;
+    margin: 24px 0;
+}
+
+/* Images */
+.content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 18px 0;
+}
+
+/* Contact Form */
+form p {
+    margin: 18px 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 6px;
+    background: #09170f;
+    color: white;
+    border: 1px solid #365945;
+    border-radius: 7px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #19a765;
+    border-color: #19a765;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background: #040d08;
+    color: #b9cfc1;
+    text-align: center;
+    padding: 24px 15px;
+    margin-top: 45px;
+    border-top: 2px solid #168653;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+    header {
+        padding: 24px 10px;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 9px 5px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 65px 16px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .content {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+        padding: 20px 15px;
+    }
+}

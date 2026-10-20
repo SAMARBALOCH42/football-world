@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Football Matches | Football World</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .match-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 22px;
+
+            margin-top: 25px;
+
+        }
+
+        .match-card {
+
+            background: #172f22;
+
+            border: 1px solid #315440;
+
+            border-radius: 12px;
+
+            padding: 24px 18px;
+
+            text-align: center;
+
+            transition: transform 0.3s;
+
+        }
+
+        .match-card:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+        .competition {
+
+            color: #5de3a0;
+
+            font-size: 13px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+        .teams {
+
+            display: flex;
+
+            justify-content: space-around;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin: 22px 0;
+
+        }
+
+        .team-name {
+
+            flex: 1;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+        }
+
+        .vs {
+
+            color: #5de3a0;
+
+            font-size: 19px;
+
+            font-weight: bold;
+
+        }
+
+        .match-status {
+
+            display: inline-block;
+
+            padding: 5px 12px;
+
+            border-radius: 20px;
+
+            background: #254b34;
+
+            color: #a7f3c6;
+
+            font-size: 12px;
+
+        }
+
+        .match-note {
+
+            color: #c5d7cc;
+
+            font-size: 13px;
+
+            margin-top: 12px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>⚽ FOOTBALL WORLD</h1>
+
+        <p>Your Home for the Beautiful Game</p>
+
+    </header>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="teams.html">Teams</a>
+
+        <a href="players.html">Players</a>
+
+        <a href="matches.html">Matches</a>
+
+        <a href="news.html">News</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="trophies.html">Trophies</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+    <main class="content">
+
+        <h2>Football Match Centre</h2>
+
+        <p>Explore sample match cards featuring famous football clubs.</p>
+
+        <div class="match-grid">
+
+            <article class="match-card">
+
+                <p class="competition">Spanish Football</p>
+
+                <div class="teams">
+
+                    <div class="team-name">Real Madrid</div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="team-name">Barcelona</div>
+
+                </div>
+
+                <span class="match-status">Sample Fixture</span>
+
+                <p class="match-note">A famous rivalry in Spanish football.</p>
+
+            </article>
+
+            <article class="match-card">
+
+                <p class="competition">English Football</p>
+
+                <div class="teams">
+
+                    <div class="team-name">Liverpool</div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="team-name">Man City</div>
+
+                </div>
+
+                <span class="match-status">Sample Fixture</span>
+
+                <p class="match-note">Two well-known clubs meet in our example.</p>
+
+            </article>
+
+            <article class="match-card">
+
+                <p class="competition">European Football</p>
+
+                <div class="teams">
+
+                    <div class="team-name">Bayern Munich</div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="team-name">PSG</div>
+
+                </div>
+
+                <span class="match-status">Sample Fixture</span>
+
+                <p class="match-note">A sample European club matchup.</p>
+
+            </article>
+
+            <article class="match-card">
+
+                <p class="competition">International Football</p>
+
+                <div class="teams">
+
+                    <div class="team-name">Brazil</div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="team-name">Argentina</div>
+
+                </div>
+
+                <span class="match-status">Sample Fixture</span>
+
+                <p class="match-note">A classic South American rivalry.</p>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 Football World | Made for Football Fans</p>
+
+    </footer>
+
+</body>
+
+</html>
